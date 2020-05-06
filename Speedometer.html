@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="speedometer.js"> </script>
+</head>
+<body onload="draw(0);">
+    <header>
+        <h1>Speed-O-Meter </h1>
+    </header>
+    <div class="speedometer">
+    <canvas class="canvas" id="myCanvas" width="600" height="300">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    </div>
+    <div class="textSpeed">
+        <p>Enter the speed to see dial position.</p>
+        <form id="drawTemp">
+            <input type="text" id="txtSpeed" name="txtSpeed" value="0" maxlength="3" />
+            <br />
+            <input type="button" id="button" value="Draw" onclick="redraw();">
+        </form>
+    </div>
+</body>
+</html>
